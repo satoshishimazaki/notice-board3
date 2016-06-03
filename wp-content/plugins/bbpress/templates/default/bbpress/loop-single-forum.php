@@ -53,7 +53,7 @@
 
 	<li class="bbp-forum-reply-count"><?php bbp_show_lead_topic() ? bbp_forum_reply_count() : bbp_forum_post_count(); ?></li>
 
-	<li class="bbp-forum-freshness">
+	<!-- <li class="bbp-forum-freshness">
 
 		<?php do_action( 'bbp_theme_before_forum_freshness_link' ); ?>
 
@@ -70,6 +70,6 @@
 			<?php do_action( 'bbp_theme_after_topic_author' ); ?>
 
 		</p>
-	</li>
+	</li> -->
 
 </ul><!-- #bbp-forum-<?php bbp_forum_id(); ?> -->
