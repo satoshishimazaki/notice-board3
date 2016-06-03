@@ -1,0 +1,14 @@
+/wp-config.php
+/index.php
+/.htaccess
+/wp-content/backup-db/*
+!/wp-content/backup-db/.htaccess
+/wp-content/uploads/*
+!.gitignore
+/wp-login.php
+/wp-content/cache/*
+/wp-content/debug.log
+/wp-content/plugings/backwpup/*
+/backwpup_readme.txt
+/wp-content/ewww/*
+/wp-content/plugins/db-cache-reloaded-fix/cache/*
