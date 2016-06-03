@@ -1938,27 +1938,11 @@ function bbp_single_forum_description( $args = '' ) {
 	 */
 	function bbp_get_single_forum_description( $args = '' ) {
 
-		// // Parse arguments against default values
-		// $r = bbp_parse_args( $args, array(
-		// 	'forum_id'  => 0,
-		// 	'before'    => '<div class="bbp-template-notice info"><p class="bbp-forum-description">',
-		// 	'after'     => '</p></div>',
-		// 	'size'      => 14,
-		// 	'feed'      => true
-		// ), 'get_single_forum_description' );
-
 		// Validate forum_id
 		$forum_id = bbp_get_forum_id( $r['forum_id'] );
 
 		// Unhook the 'view all' query var adder
 		remove_filter( 'bbp_get_forum_permalink', 'bbp_add_view_all' );
-
-		// // Get some forum data
-		// $tc_int      = bbp_get_forum_topic_count( $forum_id, false );
-		// $rc_int      = bbp_get_forum_reply_count( $forum_id, false );
-		// $topic_count = bbp_get_forum_topic_count( $forum_id );
-		// $reply_count = bbp_get_forum_reply_count( $forum_id );
-		// $last_active = bbp_get_forum_last_active_id( $forum_id );
 
 		// Has replies
 		if ( !empty( $reply_count ) ) {
@@ -2018,7 +2002,7 @@ function bbp_single_forum_description( $args = '' ) {
 					}
 
 				} else {
-					// $retstr = esc_html__( 'This forum is empty.', 'bbpress' );
+
 				}
 			}
 		}
