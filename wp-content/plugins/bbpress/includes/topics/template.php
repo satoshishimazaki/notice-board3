@@ -1489,10 +1489,10 @@ function bbp_topic_author_link( $args = '' ) {
 			$link_title   = !empty( $link_title ) ? ' title="' . esc_attr( $link_title ) . '"' : '';
 			$author_links = array();
 
-			// Get avatar
-			if ( 'avatar' === $r['type'] || 'both' === $r['type'] ) {
-				$author_links['avatar'] = bbp_get_topic_author_avatar( $topic_id, $r['size'] );
-			}
+			// // Get avatar
+			// if ( 'avatar' === $r['type'] || 'both' === $r['type'] ) {
+			// 	$author_links['avatar'] = bbp_get_topic_author_avatar( $topic_id, $r['size'] );
+			// }
 
 			// Get display name
 			if ( 'name' === $r['type'] || 'both' === $r['type'] ) {

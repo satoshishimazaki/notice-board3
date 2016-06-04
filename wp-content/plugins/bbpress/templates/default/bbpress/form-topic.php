@@ -57,10 +57,6 @@
 
 				<?php if ( current_user_can( 'unfiltered_html' ) ) : ?>
 
-					<div class="bbp-template-notice">
-						<p><?php _e( 'Your account has the ability to post unrestricted HTML content.', 'bbpress' ); ?></p>
-					</div>
-
 				<?php endif; ?>
 
 				<?php do_action( 'bbp_template_notices' ); ?>
@@ -128,27 +124,6 @@
 
 						<?php do_action( 'bbp_theme_before_topic_form_type' ); ?>
 
-						<p>
-
-							<label for="bbp_stick_topic"><?php _e( 'Topic Type:', 'bbpress' ); ?></label><br />
-
-							<?php bbp_form_topic_type_dropdown(); ?>
-
-						</p>
-
-						<?php do_action( 'bbp_theme_after_topic_form_type' ); ?>
-
-						<?php do_action( 'bbp_theme_before_topic_form_status' ); ?>
-
-						<p>
-
-							<label for="bbp_topic_status"><?php _e( 'Topic Status:', 'bbpress' ); ?></label><br />
-
-							<?php bbp_form_topic_status_dropdown(); ?>
-
-						</p>
-
-						<?php do_action( 'bbp_theme_after_topic_form_status' ); ?>
 
 					<?php endif; ?>
 
