@@ -174,10 +174,6 @@ function bbp_time_since( $older_date, $newer_date = false, $gmt = false ) {
 					$name2    = $chunks[$i + 1][1];
 					$count2   = floor( ( $since - ( $seconds * $count ) ) / $seconds2 );
 
-					// Add to output var
-					if ( 0 != $count2 ) {
-						$output .= ( 1 == $count2 ) ? _x( ',', 'Separator in time since', 'bbpress' ) . ' 1 '. $name2 : _x( ',', 'Separator in time since', 'bbpress' ) . ' ' . $count2 . ' ' . $chunks[$i + 1][2];
-					}
 				}
 
 				// No output, so happened right now
