@@ -715,7 +715,7 @@ p.form-allowed-tags {
 }
 
 #bbpress-forums div.bbp-the-content-wrapper textarea.bbp-the-content {
-	width: 100%;
+	width: 90%;
 	margin: 0;
 	font-size: 12px;
 }
@@ -1283,7 +1283,7 @@ body.my-account #bbpress-forums {
 	}
 	#bbpress-forums input#bbp_topic_title,
 	#bbpress-forums input#bbp_topic_tags {
-		width: 95%;
+		width: 85%;
 	}
 }
 
@@ -1350,4 +1350,8 @@ ul.forum.titles li.bbp-topic-freshness{
 
 #new-topic-0.bbp-topic-form{
 	width: 100%;
+}
+
+#bbp_anonymous_author{
+	width: 80%
 }
