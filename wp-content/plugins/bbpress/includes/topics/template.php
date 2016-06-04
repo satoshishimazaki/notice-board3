@@ -2059,7 +2059,7 @@ function bbp_topic_freshness_link( $topic_id = 0 ) {
 		$time_since = bbp_get_topic_last_active_time( $topic_id );
 
 		if ( !empty( $time_since ) )
-			$anchor = '<a href="' . esc_url( $link_url ) . '" title="' . esc_attr( $title ) . '">' . esc_html( $time_since ) . '</a>';
+			$anchor = '<a href="' . esc_url( $link_url ) . '" title="' . esc_attr( $title ) . '" class="time_sum">' . esc_html( $time_since ) . '</a>';
 		else
 			$anchor = __( 'No Replies', 'bbpress' );
 

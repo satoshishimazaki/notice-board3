@@ -620,9 +620,7 @@ function bbp_filter_anonymous_post_data( $args = '' ) {
 		bbp_add_error( 'bbp_anonymous_name',  __( '<strong>ERROR</strong>: Invalid author name submitted!',   'bbpress' ) );
 
 	$r['bbp_anonymous_email'] = apply_filters( 'bbp_pre_anonymous_post_author_email', $r['bbp_anonymous_email'] );
-	if ( empty( $r['bbp_anonymous_email'] ) )
-		bbp_add_error( 'bbp_anonymous_email', __( '<strong>ERROR</strong>: Invalid email address submitted!', 'bbpress' ) );
-
+	
 	// Website is optional
 	$r['bbp_anonymous_website'] = apply_filters( 'bbp_pre_anonymous_post_author_website', $r['bbp_anonymous_website'] );
 
@@ -2023,3 +2021,8 @@ function bbp_set_404() {
 
 	$wp_query->set_404();
 }
+
+function bbp_no_email( $mail ) {
+	return 'no_email@example.com';
+}
+add_filter( 'bbp_pre_anonymous_post_author_email', 'bbp_no_email' );
