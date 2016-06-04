@@ -1244,7 +1244,6 @@ body.my-account #bbpress-forums {
 	#bbpress-forums li.bbp-body li.bbp-forum-freshness,
 	#bbpress-forums li.bbp-header li.bbp-topic-freshness,
 	#bbpress-forums li.bbp-body li.bbp-topic-freshness {
-		width: 40px;
 		float: right;
 	}
 	#bbpress-forums li.bbp-body li.bbp-forum-topic-count,
@@ -1347,5 +1346,4 @@ a.time_sum{
 
 ul.forum.titles li.bbp-topic-freshness{
 	float: right;
-	width: 40px;
 }
