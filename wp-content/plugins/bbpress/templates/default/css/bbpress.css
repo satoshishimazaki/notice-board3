@@ -1347,3 +1347,7 @@ a.time_sum{
 ul.forum.titles li.bbp-topic-freshness{
 	float: right;
 }
+
+#new-topic-0.bbp-topic-form{
+	width: 100%;
+}
