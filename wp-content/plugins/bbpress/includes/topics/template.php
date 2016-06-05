@@ -1508,7 +1508,7 @@ function bbp_topic_author_link( $args = '' ) {
 				// Assemble the links
 				foreach ( $author_links as $link => $link_text ) {
 					$link_class = ' class="bbp-author-' . esc_attr( $link ) . '"';
-					$author_link[] = sprintf( '<a href="%1$s"%2$s%3$s>%4$s</a>', esc_url( $author_url ), $link_title, $link_class, $link_text );
+					$author_link[] = sprintf( '<span class="bbp-topic-started-by">%4$s</span>', esc_url( $author_url ), $link_title, $link_class, $link_text );
 				}
 
 				if ( true === $r['show_role'] ) {

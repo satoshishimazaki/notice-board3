@@ -2223,36 +2223,7 @@ function bbp_breadcrumb( $args = array() ) {
 		/** Parse Args ********************************************************/
 
 		// Parse args
-		$r = bbp_parse_args( $args, array(
-
-			// HTML
-			'before'          => '<div class="bbp-breadcrumb"><p>',
-			'after'           => '</p></div>',
-
-			// Separator
-			'sep'             => is_rtl() ? __( '&lsaquo;', 'bbpress' ) : __( '&rsaquo;', 'bbpress' ),
-			'pad_sep'         => 1,
-			'sep_before'      => '<span class="bbp-breadcrumb-sep">',
-			'sep_after'       => '</span>',
-
-			// Crumbs
-			'crumb_before'    => '',
-			'crumb_after'     => '',
-
-			// Home
-			'include_home'    => $pre_include_home,
-			'home_text'       => $pre_front_text,
-
-			// Forum root
-			'include_root'    => $pre_include_root,
-			'root_text'       => $pre_root_text,
-
-			// Current
-			'include_current' => $pre_include_current,
-			'current_text'    => $pre_current_text,
-			'current_before'  => '<span class="bbp-breadcrumb-current">',
-			'current_after'   => '</span>',
-		), 'get_breadcrumb' );
+		
 
 		/** Ancestors *********************************************************/
 
