@@ -1147,8 +1147,17 @@ body.my-account #bbpress-forums {
 		padding: 2px;
 	}
 	li.bbp-forum-info,
-	li.bbp-topic-title {
-		width: 45%;
+	#bbpress-forums li.bbp-header li.bbp-topic-title {
+		width: 65%;
+	}
+	#bbpress-forums li.bbp-body li.bbp-topic-title {
+		width: 65%;
+		font-size: larger; 
+		color:black;
+	}
+	#bbpress-forums li.bbp-body li.bbp-topic-title .bbp-topic-permalink{
+		color: black;
+		font-weight:bold;
 	}
 	li.bbp-forum-topic-count,
 	li.bbp-forum-reply-count,
@@ -1221,13 +1230,21 @@ body.my-account #bbpress-forums {
 	}
 	#bbpress-forums li.bbp-header li.bbp-forum-info,
 	#bbpress-forums li.bbp-body li.bbp-forum-info,
-	#bbpress-forums li.bbp-header li.bbp-topic-title,
+	#bbpress-forums li.bbp-header li.bbp-topic-title {
+		width: 60%;
+	}
 	#bbpress-forums li.bbp-body li.bbp-topic-title {
-		width: 50%;
+		width: 60%;
+		font-size: larger; 
+		color:black;
+	}
+	#bbpress-forums li.bbp-body li.bbp-topic-title .bbp-topic-permalink{
+		color: black;
+		font-weight:bold;
 	}
 	#bbpress-forums li.bbp-header li.bbp-forum-info,
 	#bbpress-forums li.bbp-header li.bbp-topic-title {
-		text-align: center;
+		text-align: left;
 		text-transform: uppercase;
 	}
 	#bbpress-forums li.bbp-header li.bbp-forum-topic-count,
@@ -1354,4 +1371,19 @@ ul.forum.titles li.bbp-topic-freshness{
 
 #bbp_anonymous_author{
 	width: 80%
+}
+
+@media only screen and (min-width: 400px) {
+#bbpress-forums li.bbp-header li.bbp-topic-title {
+		width: 70%;
+	}
+#bbpress-forums li.bbp-body li.bbp-topic-title {
+		width: 70%;
+		font-size: large; 
+		color:black;
+	}
+#bbpress-forums li.bbp-body li.bbp-topic-title .bbp-topic-permalink{
+		color: black;
+		font-weight:bold;
+}
 }
