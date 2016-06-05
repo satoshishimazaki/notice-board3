@@ -1219,9 +1219,7 @@ function bbp_reply_author_link( $args = '' ) {
 			$author_links = array();
 
 			// Get avatar
-			if ( 'avatar' === $r['type'] || 'both' === $r['type'] ) {
-				$author_links['avatar'] = bbp_get_reply_author_avatar( $reply_id, $r['size'] );
-			}
+
 
 			// Get display name
 			if ( 'name' === $r['type']   || 'both' === $r['type'] ) {
@@ -1237,12 +1235,9 @@ function bbp_reply_author_link( $args = '' ) {
 				// Assemble the links
 				foreach ( $author_links as $link => $link_text ) {
 					$link_class = ' class="bbp-author-' . $link . '"';
-					$author_link[] = sprintf( '<a href="%1$s"%2$s%3$s>%4$s</a>', esc_url( $author_url ), $link_title, $link_class, $link_text );
+					$author_link[] = sprintf( '<div>%4$s</div>', esc_url( $author_url ), $link_title, $link_class, $link_text );
 				}
 
-				if ( true === $r['show_role'] ) {
-					$author_link[] = bbp_get_reply_author_role( array( 'reply_id' => $reply_id ) );
-				}
 
 				$author_link = implode( $r['sep'], $author_link );
 
