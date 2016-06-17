@@ -42,6 +42,8 @@
  </div>
  <?php };?>
 
+<?php if ($options['show_comment']) : if (function_exists('wp_list_comments')) { comments_template('', true); } else { comments_template(); }; endif; ?>
+
  <div id="post_meta" class="clearfix">
   <ul id="meta">
    <?php if ($options['show_author']) : ?><li class="meta_author"><?php the_author_posts_link(); ?></li><?php endif; ?>
@@ -60,6 +62,10 @@
   <?php next_post_link( '<p class="next_post">%link</p>', __( 'next', 'tcd-w' ) ); ?>
  </div>
  <?php endif; ?>
+
+ <div id="board_bar">
+      <a href="http://localhost:8001/forums/forum/何でも掲示板"><img src="/wp-content/uploads/2016/06/image2.png" width="100%" alt="board_bar" /></a>
+ </div>
 
  <?php // related post
       if ($options['show_related_post']) :
@@ -92,7 +98,6 @@
 
 <?php wp_related_posts()?>
 
- <?php if ($options['show_comment']) : if (function_exists('wp_list_comments')) { comments_template('', true); } else { comments_template(); }; endif; ?>
 
 </div><!-- END #single_post -->
 

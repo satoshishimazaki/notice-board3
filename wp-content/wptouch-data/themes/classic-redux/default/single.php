@@ -23,14 +23,18 @@
 		<div id="content-area" class="<?php wptouch_post_classes(); ?> box">
 			<?php wptouch_the_content(); ?>
 		</div>
-                
+        <div id="comments">
+			<?php comments_template(); ?>
+		</div>
+		<div id="board_bar">
+			<a href="http://localhost:8001/forums/forum/何でも掲示板"><img src="/wp-content/uploads/2016/06/image2.png" width="100%" alt="board_bar" /></a>
+		</div>
+
                 <?php wp_related_posts()?>
 		<?php get_template_part( 'related-posts' ); ?>
 		<?php get_template_part( 'nav-bar' ); ?>
 
-		<div id="comments">
-			<?php comments_template(); ?>
-		</div>
+		
 
 	<?php } ?>
 </div>
