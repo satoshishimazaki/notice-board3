@@ -1358,3 +1358,6 @@ h3#responses {
     height: 150px;
     background-color: blanchedalmond;
 } 
+#notice_board_img{
+	margin-bottom: -10px;
+}
