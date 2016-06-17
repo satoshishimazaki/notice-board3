@@ -13,27 +13,6 @@
 
 <ul id="topic-<?php bbp_topic_id(); ?>-replies" class="forums bbp-replies">
 
-	<li class="bbp-header">
-		<div class="bbp-reply-author"><?php  _e( '投稿内容' ); ?></div><!-- .bbp-reply-author -->
-
-		<div class="bbp-reply-content">
-
-			<?php if ( !bbp_show_lead_topic() ) : ?>
-
-				<?php bbp_topic_subscription_link(); ?>
-
-				<?php bbp_user_favorites_link(); ?>
-
-			<?php else : ?>
-
-				<?php _e( 'Replies', 'bbpress' ); ?>
-
-			<?php endif; ?>
-
-		</div><!-- .bbp-reply-content -->
-
-	</li><!-- .bbp-header -->
-
 	<li class="bbp-body">
 
 		<?php if ( bbp_thread_replies() ) : ?>
