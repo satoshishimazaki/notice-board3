@@ -14,9 +14,6 @@
 	<?php do_action( 'bbp_theme_before_anonymous_form' ); ?>
 
 	<fieldset class="bbp-form">
-		<legend><?php ( bbp_is_topic_edit() || bbp_is_reply_edit() ) ? _e( 'Author Information', 'bbpress' ) : _e( 'Your information:', 'bbpress' ); ?></legend>
-
-		<?php do_action( 'bbp_theme_anonymous_form_extras_top' ); ?>
 
 		<p>
 			<label for="bbp_anonymous_author"><?php _e( 'Name (required):', 'bbpress' ); ?></label><br />

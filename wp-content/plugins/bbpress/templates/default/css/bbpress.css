@@ -722,6 +722,7 @@ p.form-allowed-tags {
 	width: 90%;
 	margin: 0;
 	font-size: 12px;
+	border-color: #eeeeee;
 }
 
 #bbpress-forums div.bbp-the-content-wrapper table,
@@ -1420,4 +1421,8 @@ ul.forum.titles li.bbp-topic-freshness{
 	width: 5px;
 	float: left;
 	margin-right: 3px;
+}
+
+.button.submit{
+	border-color: #eeeeee;
 }

@@ -44,11 +44,12 @@
 
 				<div>
 
-					<?php bbp_get_template_part( 'form', 'anonymous' ); ?>
 
 					<?php do_action( 'bbp_theme_before_reply_form_content' ); ?>
 
 					<?php bbp_the_content( array( 'context' => 'reply' ) ); ?>
+
+					<?php bbp_get_template_part( 'form', 'anonymous' ); ?>
 
 					<?php do_action( 'bbp_theme_after_reply_form_content' ); ?>
 
@@ -122,7 +123,7 @@
 
 						<?php bbp_cancel_reply_to_link(); ?>
 
-						<button type="submit" tabindex="<?php bbp_tab_index(); ?>" id="bbp_reply_submit" name="bbp_reply_submit" class="button submit"><?php _e( 'Submit', 'bbpress' ); ?></button>
+						<button type="submit" tabindex="<?php bbp_tab_index(); ?>" id="bbp_reply_submit" name="bbp_reply_submit" class="button submit"><?php _e( '投稿', 'bbpress' ); ?></button>
 
 						<?php do_action( 'bbp_theme_after_reply_form_submit_button' ); ?>
 

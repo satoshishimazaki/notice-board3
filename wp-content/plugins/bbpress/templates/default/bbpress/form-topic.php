@@ -61,9 +61,7 @@
 
 				<?php do_action( 'bbp_template_notices' ); ?>
 
-				<div>
-
-					<?php bbp_get_template_part( 'form', 'anonymous' ); ?>
+				<div>	
 
 					<?php do_action( 'bbp_theme_before_topic_form_title' ); ?>
 
@@ -79,6 +77,8 @@
 					<?php bbp_the_content( array( 'context' => 'topic' ) ); ?>
 
 					<?php do_action( 'bbp_theme_after_topic_form_content' ); ?>
+
+					<?php bbp_get_template_part( 'form', 'anonymous' ); ?>
 
 					<?php if ( ! ( bbp_use_wp_editor() || current_user_can( 'unfiltered_html' ) ) ) : ?>
 
@@ -172,7 +172,7 @@
 
 						<?php do_action( 'bbp_theme_before_topic_form_submit_button' ); ?>
 
-						<button type="submit" tabindex="<?php bbp_tab_index(); ?>" id="bbp_topic_submit" name="bbp_topic_submit" class="button submit"><?php _e( 'Submit', 'bbpress' ); ?></button>
+						<button type="submit" tabindex="<?php bbp_tab_index(); ?>" id="bbp_topic_submit" name="bbp_topic_submit" class="button submit"><?php _e( '投稿', 'bbpress' ); ?></button>
 
 						<?php do_action( 'bbp_theme_after_topic_form_submit_button' ); ?>
 
