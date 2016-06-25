@@ -1,7 +1,7 @@
 <?php get_header(); ?>
 <div id="content">
 	<?php if ( !is_archive() ) { ?>
-    	<a href="http://localhost:8001/forums/forum/何でも掲示板"><div id="notice_board_img"><img src="/wp-content/uploads/2016/06/image1.png" width="100%" alt="notice-board" /></div></a> 
+    	<a href="http://localhost:8001/forums/forum/何でも掲示板"><div id="notice_board_img"><img src="/wp-content/uploads/2016/06/good_1-2.jpg" width="100%" alt="notice-board" /></div></a> 
 	<?php } ?>
 	<?php if ( is_archive() ) { ?>
 		<h2 class="heading-font archive-title"><?php wptouch_fdn_archive_title_text(); ?></h2>

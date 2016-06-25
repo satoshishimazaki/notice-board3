@@ -64,7 +64,7 @@
  <?php endif; ?>
 
  <div id="board_bar">
-      <a href="http://localhost:8001/forums/forum/何でも掲示板"><img src="/wp-content/uploads/2016/06/image2.png" width="100%" alt="board_bar" /></a>
+      <a href="http://localhost:8001/forums/forum/何でも掲示板"><img src="/wp-content/uploads/2016/06/good_2-2.jpg" width="100%" alt="board_bar" /></a>
  </div>
 
  <?php // related post
