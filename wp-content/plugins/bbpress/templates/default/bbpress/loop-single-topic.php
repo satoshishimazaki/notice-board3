@@ -53,21 +53,23 @@
 
 		<?php do_action( 'bbp_theme_before_topic_meta' ); ?>
 
-		<p class="bbp-topic-meta">
-
-			<?php do_action( 'bbp_theme_before_topic_started_by' ); ?>
-
- 			<span class="bbp-topic-started-by"><?php printf( bbp_get_topic_author_link( array( 'size' => '14' ) ) ); ?></span>
-			<?php do_action( 'bbp_theme_after_topic_started_by' ); ?>
-
-		</p>
+		
 
 		<?php do_action( 'bbp_theme_after_topic_meta' ); ?>
 
 		<?php bbp_topic_row_actions(); ?>
 
 	</li>
+    <li class="bbp-topic-name">
 
+			<?php do_action( 'bbp_theme_before_topic_started_by' ); ?>
+
+ 			<span class="bbp-topic-started-by"><?php printf( bbp_get_topic_author_link( array( 'size' => '14' ) ) ); ?></span>
+			<?php do_action( 'bbp_theme_after_topic_started_by' ); ?>
+
+	</li>
+
+	<li class="comment_icon"><i class="fa fa-commenting" aria-hidden="true"></i></li>	
 
 	<li class="bbp-topic-reply-count"><?php bbp_show_lead_topic() ? bbp_topic_reply_count() : bbp_topic_post_count(); ?></li>
 

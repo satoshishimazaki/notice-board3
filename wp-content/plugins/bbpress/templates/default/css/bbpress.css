@@ -131,15 +131,15 @@ li.bbp-forum-info,
 li.bbp-topic-title {
 	float: left;
 	text-align: left;
-	width: 55%;
+	width: 100%;
 }
 li.bbp-forum-topic-count,
 li.bbp-topic-voice-count,
 li.bbp-forum-reply-count,
 li.bbp-topic-reply-count {
 	float: left;
-	text-align: center;
-	width: 10%;
+	text-align: right;
+	width: 5%;
 }
 
 li.bbp-forum-freshness,
@@ -1152,10 +1152,10 @@ body.my-account #bbpress-forums {
 	}
 	li.bbp-forum-info,
 	#bbpress-forums li.bbp-header li.bbp-topic-title {
-		width: 65%;
+		width: 100%;
 	}
 	#bbpress-forums li.bbp-body li.bbp-topic-title {
-		width: 65%;
+		width: 100%;
 		font-size: larger; 
 		color:black;
 	}
@@ -1167,7 +1167,7 @@ body.my-account #bbpress-forums {
 	li.bbp-forum-reply-count,
 	li.bbp-topic-voice-count,
 	li.bbp-topic-reply-count {
-		width: 15%;
+		width: 10%;
 	}
 	span.bbp-reply-post-date {
 		float: right;
@@ -1236,10 +1236,10 @@ body.my-account #bbpress-forums {
 	#bbpress-forums li.bbp-header li.bbp-forum-info,
 	#bbpress-forums li.bbp-body li.bbp-forum-info,
 	#bbpress-forums li.bbp-header li.bbp-topic-title {
-		width: 60%;
+		width: 100%;
 	}
 	#bbpress-forums li.bbp-body li.bbp-topic-title {
-		width: 60%;
+		width: 100%;
 		font-size: larger; 
 		color:black;
 	}
@@ -1380,10 +1380,10 @@ ul.forum.titles li.bbp-topic-freshness{
 
 @media only screen and (min-width: 400px) {
 #bbpress-forums li.bbp-header li.bbp-topic-title {
-		width: 70%;
+		width: 100%;
 	}
 #bbpress-forums li.bbp-body li.bbp-topic-title {
-		width: 70%;
+		width: 100%;
 		font-size: large; 
 		color:black;
 	}
@@ -1412,4 +1412,12 @@ ul.forum.titles li.bbp-topic-freshness{
 	float: left;
 }
 
-
+.bbp-topic-name{
+	width: 60%;
+	float: left;
+}
+.comment_icon{
+	width: 5px;
+	float: left;
+	margin-right: 3px;
+}
