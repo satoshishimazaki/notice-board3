@@ -1362,3 +1362,11 @@ h3#responses {
 #notice_board_img{
 	margin-bottom: -10px;
 }
+
+/* ---------- 記事見出し---------- */
+#content-area h3{
+  padding-left: 3px;
+  border-left: solid;
+  border-left-color: gray;
+  border-left-width: 3px;
+}
